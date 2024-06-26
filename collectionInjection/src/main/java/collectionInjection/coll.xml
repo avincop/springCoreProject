@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+<bean id="obj" class="collectionInjection.Collection1">  
+<property name="addressList"> 
+<list>
+<value>india</value>  
+<value>pak</value>  
+<value>usa</value>  
+<value>india</value>  
+</list> 
+</property>  
+
+<property name="addressSet"> 
+<set>
+
+<value>india</value>  
+<value>pak</value>  
+<value>usa</value>  
+<value>india</value> 
+
+</set>
+</property>  
+  
+  <property name="addressMap"> 
+<map>
+
+<entry key="1" value="india"/>
+<entry key="2" value="pak"/>
+<entry key="3" value="usa"/>
+<entry key="4" value="india"/>
+
+</map>
+</property>  
+  
+  <property name="userDetail">
+  <props>
+  <prop key="userName">Avinash</prop>
+  <prop key="password">12345</prop>
+  
+  
+  </props>
+  
+  
+  </property>
+  
+</bean>  
+
+
+  
+</beans>  
